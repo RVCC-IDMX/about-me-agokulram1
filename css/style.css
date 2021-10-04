@@ -1,0 +1,28 @@
+body {
+    font-family: Bebas Neue;
+    background-color: #FA9700;
+    color: #006BFA;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto+Condensed&display";
+    font-size: 40pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    background-color: #EB810A;
+    text-align: center;
+}
+
+#hero img{
+    width: 300px;
+}
+
+#bio{
+    text-align: center;
+}
+
