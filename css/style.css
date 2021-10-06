@@ -1,7 +1,7 @@
 body {
     font-family: Bebas Neue;
-    background-color: #FA9700;
-    color: #006BFA;
+    background-color: #f80000;
+    color: #0400f8;
 
 }
 h1,h2,h3,h4,h5,h6 {
@@ -14,7 +14,7 @@ header {
 }
 
 #hero, footer {
-    background-color: #EB810A;
+    background-color: #f1f1f1;
     text-align: center;
 }
 
