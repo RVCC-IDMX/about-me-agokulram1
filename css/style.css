@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 header {
     text-align: center;
 }
-
+/* Hero Section */
 #hero, footer {
     background-color: #f1f1f1;
     text-align: center;
@@ -21,8 +21,27 @@ header {
 #hero img{
     width: 300px;
 }
-
+/* Bio Section */
 #bio{
     text-align: center;
 }
 
+section h2{
+    font-family: Bebas Neue;
+}
+
+li{
+    font-family: 'Noto Sans Mono', monospace;;
+}
+
+#gallery {
+    border: 3px dotted #0414fd;
+}
+
+#gallery img {
+    max-width:100%;
+}
+
+#gallery figure {
+    text-align: center;
+}
