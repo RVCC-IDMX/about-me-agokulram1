@@ -36,6 +36,7 @@ li{
 
 #gallery {
     border: 3px dotted #0414fd;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -44,4 +45,17 @@ li{
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature */
+
+#lit{
+    border: 3px dotted #0414fd;
+    margin-bottom: 2rem;
+}
+
+#lit div{
+   padding: 2rem; 
+   max-width: 40rem;
+   margin: 0 auto;
 }
