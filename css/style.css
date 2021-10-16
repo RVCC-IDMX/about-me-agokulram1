@@ -69,7 +69,7 @@ element.style {
    max-width: 40rem;
    margin: 0 auto;
 }
-
+/* tablet size */
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
@@ -82,4 +82,33 @@ element.style {
         font-size: 2rem;
         margin-left: 1rem;
     }
+    figure img{
+        width: 100%;
+    }
+    #lit div{
+        max-width: 100%;
+        columns: 20rem;
+    }
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100em){
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1 fr;
+    }
+}
+
+hr{
+    display: none;
+}
+
+#gallery{
+    grid-column: 1/-1;
+}
+
+figure {
+    display: block;
+}
 }
