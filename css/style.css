@@ -44,7 +44,7 @@ li{
 }
 
 #gallery img {
-    max-width:100%;
+    max-width:50%;
 }
 
 #gallery figure {
@@ -69,6 +69,7 @@ element.style {
    max-width: 40rem;
    margin: 0 auto;
 }
+
 /* tablet size */
 @media screen and (min-width: 60em) {
     figure {
@@ -111,4 +112,9 @@ hr{
 figure {
     display: block;
 }
-}
+ .iframe-border {
+    border: 3px dotted #0414fd;
+  }
+
+  
+
