@@ -116,5 +116,8 @@ figure {
     border: 3px dotted #0414fd;
   }
 
-  
+/* Contact Form */
 
+#formElements {
+    display: grid;
+}
