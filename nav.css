@@ -15,3 +15,16 @@ main {
     display: flex;
     flex-direction: column;
 }
+.img {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+height: 7vw;
+width: 7vw;
+}
+
+.img h1 {
+    font-size: 1.2em;
+}
