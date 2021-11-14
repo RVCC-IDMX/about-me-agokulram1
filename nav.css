@@ -28,3 +28,21 @@ width: 7vw;
 .img h1 {
     font-size: 1.2em;
 }
+
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5 0;
+}
+
+.navbar-links a {
+    color: whitesmoke;
+    background-attachment: #333;
+    font-size: 1.5rem;
+    padding: 1rem, 1.25rem;
+}
+.navbar-links a:hover,
+.navbar-links a:focus{
+    filter: invert(1);
+    border-radius: 10px;
+}
