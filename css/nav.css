@@ -63,3 +63,12 @@ main {
     text-decoration: none;
     display: inline-block;
 }
+
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    color: #333;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    outline: none;
+}
