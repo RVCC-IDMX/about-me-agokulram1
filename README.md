@@ -12,6 +12,13 @@ The first step I learned to creating a website is html (hyper text markup link) 
 Then I learned to do CSS in this language, we used cascading style sheets to format the web page and add colors to the website and did this to style the navbar. The syntax of CSS is Selector Property type then value. We also used CSS to change the font and size of the web form and the header. In the navbar section we used the CSS to scroll smoothly and to make sure the navbar links work properly. The final thing we did was use responsive web page design using media queries to be compatible with different media, Media queries can be used as large, or small. To sum up, this is what I learned using CSS (Cascading style sheets) and HTML (hyper text markup link).
 
 In step 2 we replaced Bob with our initials then I added a bio and hobbies section in my html. Then I cleared up my image gallery and then added two photos of myself. After that I checked to see if everything looks good on media states such as iPhone and iPad. I then checked to see if everything has been commented properly and I added a link to my footer then updated my ReadME.md.
+
+Step 3 is when I added one or two articles or essays whatever you would like to call them to the website I decided to write about the hover image effect.
+I did this article by finding sources in 3 different websites which are: 
+https://www.proglobalbusinesssolutions.com/css-hover-effects/
+https://webdesign.tutsplus.com/tutorials/how-to-create-different-css-hover-effects-from-scratch--cms-34222
+https://tutorialdeep.com/knowhow/create-image-hover-overlay-effect-css/
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
 </p>
 
 <section>
