@@ -19,6 +19,9 @@ https://www.proglobalbusinesssolutions.com/css-hover-effects/
 https://webdesign.tutsplus.com/tutorials/how-to-create-different-css-hover-effects-from-scratch--cms-34222
 https://tutorialdeep.com/knowhow/create-image-hover-overlay-effect-css/
 https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+Step 4 In this part of the project I replaced the old code with new code by getting it from codepen and transalating it from one style of CSS
+to another. After that I modified the changes I made to the HTML and to the CSS.
 </p>
 
 <section>

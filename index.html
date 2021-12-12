@@ -5,28 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel = "stylesheet">
-  <link href="css/nav.css" rel = "stylesheet">
+  <link href="css/nav.css" rel = "stylesheet"> 
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 </head>
 <body>
   <header>
-    <nav class="navbar">
-    <div class="logo">
-      <img src="img/android-icon-96x96copy.png" alt="my initals as a logo" >
-      <h1 class="logo-title">Web Dev I - Online!</h1>       
-    </div> 
-    <div class ="navbar-links">
-     <ul>
+    
+    <nav class="nav">
+      <div class="logo">
+        <img src="img/android-icon-96x96copy.png" alt="my initals as a logo" >
+        <h1 class="logo-title">Web Dev I - Online!</h1>       
+      </div> 
+      <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+      <label for="nav__checkbox" class="nav__toggle">
+        <svg class="menu" viewBox="0 0 448 512" width="50" title="bars">
+          <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        </svg>
+        <svg class="close" viewBox="0 0 384 512" width="50" title="times">
+          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+        </svg>
+      </label>
+      <ul class="nav__menu">
         <li><a href="#bio">Bio</a> </li>
         <li><a href="#gallery">Gallery</a> </li>
         <li><a href="#lit">Blog</a> </li>
-        <li><a href="#contact">Contact Us</a> </li>
-     </ul>
-    </div>
+        <li><a href="#contact">Contact Me</a> </li>
+      </ul>
     </nav>
     </header>
+    <div class="content">
+      <h2></h2>
+    </div>
     <main>
       <section id="hero">
     <img src="img/me.png" alt="Avatar picture of me">
@@ -72,18 +84,21 @@
       <hr>
       <figure>
         </section>
-        <article id="article">
+        <article id="lit">
           <h2>Article On Hover Effect:</h2>
           <article>
+          <br>
             In this short essay I am going to discuss what is an image hover effect, how its used and how to create one.
-            
+          </br>
+          <br>
             First, An hover effect is used to effect the graphical interface component response when the mouse hovers over it. I chose This
             topic because its interesting how an hover is created and how its used. 
             The response can be either a form of motion or a change in appearence. The effects are used to highlight important detail.
             Elements on the web page can improve the site interactivity. Hover Effects can can keep the visitors engaged an compelled 
             and can even be helpful by making them spend more time on your website. You can also make the users experience by guiding them what to do next.
-     
-
+        </br>
+        
+            <br>
             Second, an hover effect is created by containing the image and overlaying the div content to overlay the image here are the steps:
             1. Creating a markup page: We’ll start with a plain unordered list which will represent a typical page menu. 
             Each menu link will include two span elements. 
@@ -94,102 +109,89 @@
             3. Revealing Swipe CSS Hover Effect: In this second example, we’ll continue with another hover effect where text is replaced by a Font Awesome icon. 
             But, this time, the replacement will happen in the background and won’t be visible to us, thanks to a “swipe” that happens in the foreground.
             These were some of the examples on how to code to get the hpver effect.
-
+            </br>
+            <br>
             Third, a good example of how this is suppose to work is the following code 
-            (try using this in a texteditor or in w3schools also add the html and meta tags to make this work): 
-            
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-Finally, I am going to show the how I wrote the code for the hover effect here it is shown below:
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-.Gallery:hover {
-  opacity: 0.7;
-}
+            (this is the CSS to make this work to make this work): 
+          </br>
+          <br>
+         
+        .container {
+        position: relative;
+        width: 50%;
+        }
+        
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        
+        .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+        }
+        
+        .container:hover .overlay {
+        opacity: 1;
+        }
+        
+        .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+        Finally, I am going to show the how I wrote the code for the hover effect here it is shown below:
+        .container:hover .image {
+        opacity: 0.3;
+        }
+        
+        .container:hover .middle {
+        opacity: 1;
+        }
+        
+        .text {
+        background-color: #04AA6D;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        }
+        .Gallery:hover {
+        opacity: 0.7;
+        }
+      </br>
+        </article>
 
 </style>
 </head>
-<body>
-
-<h2>Fade in Overlay</h2>
-<p>Hover over the image to see the effect.</p>
-
-<div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Hello World</div>
-  </div>
-</div>
-
-</body>
-</html>
-
-          </article>
-          
-
-
+     
          </div>
         </article>
         <section id ="video">
-          <h2>A short Video:</h2>
+          <h2>A Short Video:</h2>
           <iframe id="myVideo" style="border: 3px dotted #0414fd;" width="560" height="315"
-           width="560" height="315" src="https://www.youtube.com/embed/2INtUvPQMgE" 
+           src="https://www.youtube.com/embed/2INtUvPQMgE" 
           title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
           <p>This is a short video about me and what I like to do.</p>
           </section>
           <section id="contact">
-            <h2>Contact Us:</h2>
+            <h2>Contact Me:</h2>
             <form id="contactForm"name="contactForm" method="post"  data-netlify="true">
               <fieldset>
                 <legend>Contact Form</legend>

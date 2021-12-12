@@ -1,24 +1,41 @@
  body {
     font-family: Bebas Neue;
     background-color: #db6f6f;
-    color: #110ebd65;
+    color: #110ebdd8;
+    font-size: 1.5vw;
 
 }
+
 h1 {
     font-family: "Roboto+Condensed&display";
-    font-size: 26pt;
+    font-size: 5vw;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
     font-family: "Roboto+Condensed&display";
-    font-size: 40pt;
+    font-size: 5vw;
 }
 
 h2 {
   margin: .1em;  
+  font-family: "Roboto+Condensed&display";
+  font-size: 3vw;
 }
 
 header {
-    text-align: center;
+        text-align:center  ;
+}
+
+
+.logo {
+    display: flex;
+    text-align: left;  
+    flex: 33.33%;
+    
+}
+.logo-title {
+    padding-left: 1vw;
+    text-align: left;
+    
 }
 /* Hero Section */
 #hero, footer {
@@ -203,4 +220,19 @@ legend {
   }
   .Gallery:hover {
     opacity: 0.7;
+  }
+
+  /* Short Video */
+  
+  @media only screen and (max-width:560px) {
+      p{
+          font-size: 3vw;
+      }
+     article{
+          font-size: 3vw;
+      }
+      iframe{
+          width: 90vw;
+          height: 60vw;
+      }
   }

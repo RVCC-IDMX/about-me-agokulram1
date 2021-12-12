@@ -1,34 +1,47 @@
 
-/* make scrolling smooth */
-html {
-    scroll-behavior: smooth;
-}
+li a:hover {
+    background-color: rgb(221, 219, 219);
+    color: rgb(12, 12, 12);
+  }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
-body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+  li a {
+    font-family: Bebas Neue;
+    font-size: 2vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .5vw .5vw;
 
-/* add some padding back to rest of page */
-main {
-    padding: 2vw;
-}
-
-/* navbar */
-.navbar{
+    text-decoration: none;
+  } 
+  /* navbar */
+.nav{
     background-color: #333;
     color: whitesmoke;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
 }
+  /* For Desktop */
+@media only screen and (min-width:561px) {
+ul {
+    width:auto;
+    list-style-type: none;
+    border-spacing: 0em;
+    margin:0em;
+    padding:0em ;
+    overflow: hidden;
+    border:0em;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  
 
 
 /* logo */
@@ -44,51 +57,123 @@ main {
 .logo h1 {
     font-size: 1.2em;
 }
-/* navigation list */
-.navbar-links li{
-    list-style: none;
-    display: block;
-    padding: 0.25em 0;
-}
+  /* Change the link color to #111 (black) on hover */
+  
 
-/*  
- style all a tags in header 
- and then on hover
-*/
-.navbar-links a{
-    color: whitesmoke;
-    background-attachment: #333;
-    font-size: 1.5rem;
-    padding: 1rem 1rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    display: inline-block;
-}
+        .nav__toggle {
+          position: absolute;
+          cursor: pointer;
+          margin: 0rem 1rem;
+          right: 0;
+        }
 
+          .close {
+            display: none;
+          }
+      
+          .menu {
+            margin-top: 0.2rem;
+          }
+        
+      
+        .nav__checkbox {
+          display: none;
+        }
+      
+        .nav__menu {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          align-items: right;
+          margin: 1rem;
+      
+        }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
-    color: #333;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    outline: none;
-}
+        .nav__toggle {
+            display:none;
+          }
+      
+    }
+  
+/* mobile */
 
-
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
-@media screen and (min-width: 60rem){
-
-    .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.navbar ul {
+@media only screen and (max-width:560px) {
+    /* logo */
+.logo{
     display: flex;
-    justify-content: space-between;
+    align-items: left;
+    background-color: #333;
+    color: aliceblue;
 }
+.logo img{
+    padding-top: 2vw;
+    height: 7vw;
+    width: 7vw;
 }
+.logo h1 {
+    font-size: 1em;
+}
+
+    /* Toggle the hamburger menu in mobile view */
+   
+    .nav {
+      
+        border-bottom: 1px solid #eef1f6;
+      }
+      .nav__toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        right: 0;
+      }
+      .nav__toggle svg {
+        width: 1.5rem;
+        fill: #eceef3;
+      }
+      .nav__toggle .close {
+        display: none;
+      }
+      .nav__toggle .menu {
+        padding-top: 2vw;
+        margin-top: 0.2vw;
+     
+      }
+      .nav__checkbox {
+        display: none;
+      }
+      .nav__menu {
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin: 1rem;
+      }
+      .nav__menu li {
+
+        list-style:none;
+        display: none;
+      }
+      /*.nav__menu li:first-child {
+        margin-right: auto;
+        display: block;
+      } */
+      .nav__menu a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 3vw;
+        
+      }
+      .nav__menu svg {
+        width: 1.5rem;
+        fill: #f9f9fa;
+      }
+      #nav__checkbox:checked ~ ul.nav__menu li {
+        display: block;
+      }
+      #nav__checkbox:checked ~ label.nav__toggle .close {
+        display: block;
+      }
+      #nav__checkbox:checked ~ label.nav__toggle .menu {
+        display: none;
+      }
+    }
